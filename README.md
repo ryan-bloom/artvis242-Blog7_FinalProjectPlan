@@ -73,5 +73,5 @@ function drawKeypoints()  {
 
 Finally, I added a centerMove() method to my Center() class which takes in 2 parameters, an x and a y value.  These 2 parameters are the locations of the user's wrists tracked by the video camera.  Then, this method relocates the center object to the location given by the parameters, effectively attaching the object to the user's hand movements.  
 
-[Here's a link to the pice](https://www.thisiscolossal.com/2016/05/kung-fu-visualizations/)
+[Here's a link to the pice](https://github.com/ryanAB702/MotionTrackingFinalProject)
 
