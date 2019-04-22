@@ -17,7 +17,7 @@ As described above, I am planning on extending my algorithm art work from earlie
 
 ### Sketch
 Here's a sketch of my project plan:
-![Ryan Bloom](images/final_sketch_plan.jpg?raw=true "Ryan Bloom")
+![Ryan Bloom](images/final_sketch_plan_rotate.jpg?raw=true "Ryan Bloom")
 
 ### Technical Details
 In this work, I am using several libraries.  First, I am using p5.js and p5.collide2d.js as well.  The first of these two libraries is used to draw all of the shapes and movements seen on the canvas, as we have been doing all semester long.  The second libarary, p5.collide2d.js is used to detect collisions between the bouncers moving around the outside of the screen.  Another library that I am using, and a new one that I have never used before, is ml5.js.  This library is the one that allows the use of the computer's webcam to track user's motions.  I connect the user's hand locations to the locations of the center dots.  I am going to host this work on my github account (and a link to the final piece is located at the bottom of this post).
@@ -55,8 +55,8 @@ function drawKeypoints()  {
       // A keypoint is an object describing a body part (like rightArm or leftShoulder)
       let keypoint = poses[i].pose.keypoints[j];
   
-      rightwrist_point = poses[0].pose.keypoints[10]
-      leftwrist_point = poses[0].pose.keypoints[9]
+      rightshoulder_point = poses[0].pose.keypoints[6]
+      leftshoulder_point = poses[0].pose.keypoints[5]
 
       imageMode(CENTER)
       // Only draw an ellipse is the pose probability is bigger than 0.2
